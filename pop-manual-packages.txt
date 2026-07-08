@@ -33,3 +33,4 @@ virtualbox
 wireshark
 yasm
 zsh
+tradingview
