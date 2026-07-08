@@ -1,0 +1,8 @@
+app.zen_browser.zen	1.19.1b	flathub
+com.brave.Browser	1.91.175	flathub
+com.discordapp.Discord	0.0.127	flathub
+com.getpostman.Postman	12.0.3	flathub
+com.spotify.Client	1.2.82.428.g0ac8be2b	flathub
+dev.cappsy.CosmicExtAppletLogoMenu	0.6.11	cosmic
+io.dbeaver.DBeaverCommunity	25.3.4	flathub
+md.obsidian.Obsidian	1.12.4	flathub
