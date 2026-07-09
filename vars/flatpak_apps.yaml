@@ -1,0 +1,8 @@
+flatpak_apps:
+  - app.zen_browser.zen
+  - com.brave.Browser
+  - com.discordapp.Discord
+  - com.getpostman.Postman
+  - com.spotify.Client
+  - io.dbeaver.DBeaverCommunity
+  - md.obsidian.Obsidian
