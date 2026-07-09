@@ -1,0 +1,7 @@
+- name: Provision Fedora workstation
+  hosts: all
+  vars_files:
+    - vars/vscode_extensions.yaml
+  roles:
+    - role: vscode_extensions
+      tags: vscode_extensions
