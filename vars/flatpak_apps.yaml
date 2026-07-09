@@ -4,5 +4,6 @@ flatpak_apps:
   - com.discordapp.Discord
   - com.getpostman.Postman
   - com.spotify.Client
+  - com.tradingview.tradingview
   - io.dbeaver.DBeaverCommunity
   - md.obsidian.Obsidian
