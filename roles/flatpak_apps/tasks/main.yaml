@@ -1,0 +1,13 @@
+- name: Ensure flathub remote is added for user
+  community.general.flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    method: user
+
+- name: Install flatpak apps from flathub
+  community.general.flatpak:
+    name: "{{ flatpak_apps }}"
+    state: present
+    remote: flathub
+    method: user
