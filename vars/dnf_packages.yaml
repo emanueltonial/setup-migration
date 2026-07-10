@@ -1,3 +1,4 @@
+---
 dnf_packages:
   - "@Development Tools"
   - cheese
@@ -23,3 +24,21 @@ dnf_packages:
   - wireshark
   - yasm
   - zsh
+  - code
+  - containerd.io
+  - docker-ce
+  - docker-ce-cli
+  - docker-ce-rootless-extras
+  - docker-buildx-plugin
+  - docker-compose-plugin
+  - terraform
+  - steam
+  - unrar
+  - akmod-nvidia
+  - xorg-x11-drv-nvidia-cuda
+  - kernel-headers
+  - kernel-devel
+  - dkms
+  - elfutils-libelf-devel
+  - qt5-qtx11extras
+  - VirtualBox-7.2
