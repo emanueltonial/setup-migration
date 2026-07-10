@@ -3,8 +3,12 @@
   vars_files:
     - vars/vscode_extensions.yaml
     - vars/flatpak_apps.yaml
+    - vars/dnf_packages.yaml
   roles:
     - role: vscode_extensions
       tags: vscode_extensions
     - role: flatpak_apps
       tags: flatpak_apps
+    - role: dnf_packages
+      become: true
+      tags: dnf_packages
