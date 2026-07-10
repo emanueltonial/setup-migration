@@ -8,7 +8,7 @@ dnf_packages:
   - gnupg2
   - htop
   - hydra
-  - java-17-openjdk-devel
+  - java-25-openjdk-devel
   - nmap
   - p7zip
   - p7zip-plugins
