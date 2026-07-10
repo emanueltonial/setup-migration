@@ -1,0 +1,29 @@
+- name: Import GPG keys for third-party repos
+  ansible.builtin.rpm_key:
+    key: "{{ item.gpgkey }}"
+    state: present
+  loop: "{{ repos_config }}"
+  loop_control:
+    label: "{{ item.name }}"
+  become: true
+
+- name: Add third-party repos
+  ansible.builtin.yum_repository:
+    name: "{{ item.name }}"
+    description: "{{ item.description }}"
+    baseurl: "{{ item.baseurl }}"
+    gpgkey: "{{ item.gpgkey }}"
+    gpgcheck: true
+    enabled: true
+  loop: "{{ repos_config }}"
+  loop_control:
+    label: "{{ item.name }}"
+  become: true
+
+- name: Install RPM Fusion free and nonfree release packages
+  ansible.builtin.dnf:
+    name:
+      - "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_major_version }}.noarch.rpm"
+      - "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_major_version }}.noarch.rpm"
+    state: present
+  become: true
