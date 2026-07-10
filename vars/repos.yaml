@@ -1,0 +1,20 @@
+repos:
+  - name: code
+    description: "Visual Studio Code"
+    baseurl: "https://packages.microsoft.com/yumrepos/vscode"
+    gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+
+  - name: docker-ce-stable
+    description: "Docker CE Stable - $basearch"
+    baseurl: "https://download.docker.com/linux/fedora/$releasever/$basearch/stable"
+    gpgkey: "https://download.docker.com/linux/fedora/gpg"
+
+  - name: hashicorp
+    description: "Hashicorp Stable - $basearch"
+    baseurl: "https://rpm.releases.hashicorp.com/fedora/$releasever/$basearch/stable"
+    gpgkey: "https://rpm.releases.hashicorp.com/gpg"
+
+  - name: virtualbox
+    description: "Fedora $releasever - $basearch - VirtualBox"
+    baseurl: "http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch"
+    gpgkey: "https://www.virtualbox.org/download/oracle_vbox_2016.asc"
