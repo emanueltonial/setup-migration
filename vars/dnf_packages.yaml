@@ -1,0 +1,25 @@
+dnf_packages:
+  - "@Development Tools"
+  - cheese
+  - fish
+  - gcc
+  - git
+  - gnupg2
+  - htop
+  - hydra
+  - java-17-openjdk-devel
+  - nmap
+  - p7zip
+  - p7zip-plugins
+  - pipx
+  - postgresql-server
+  - postgresql-contrib
+  - python3-pip
+  - rsync
+  - snapd
+  - solaar
+  - tilix
+  - unzip
+  - wireshark
+  - yasm
+  - zsh
